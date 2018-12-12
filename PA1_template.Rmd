@@ -75,6 +75,11 @@ imputedata$steps[which(is.na(dataSet$steps))]<- as.vector(avg[as.character(dataS
 ```{r}
 stepseachday <- tapply(imputedata$steps, imputedata$date, sum, na.rm=TRUE)
 qplot(stepseachday, xlab="No. of Steps Taken Each Day", ylab="Total Frequency", binwidth=500)
+mean_each_day_imputed <- mean(stepseachday)
+median_each_day_imputed <- median(stepseachday)
 ```
+Mean: `r mean_each_day_imputed`
+Median: `r median_each_day_imputed`
+
 
 ## Are there differences in activity patterns between weekdays and weekends?

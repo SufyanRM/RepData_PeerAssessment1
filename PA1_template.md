@@ -89,4 +89,12 @@ qplot(stepseachday, xlab="No. of Steps Taken Each Day", ylab="Total Frequency", 
 
 ![](PA1_template_files/figure-html/unnamed-chunk-7-1.png)<!-- -->
 
+```r
+mean_each_day_imputed <- mean(stepseachday)
+median_each_day_imputed <- median(stepseachday)
+```
+Mean: 1.0766189\times 10^{4}
+Median: 1.0766189\times 10^{4}
+
+
 ## Are there differences in activity patterns between weekdays and weekends?
